@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sparsh Goyal Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+.adjustment1{
+	background-size: contain;
+	margin-bottom: 15%;
+	margin-left: 40%;
+}
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Sparsh Goyal</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img adjustment1" style="background-image:url(images/poster.jpg); max-height:65%;">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Sparsh Goyal</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation">Student</span>
+
+						<br>
+						<br>
+			            <h2>Full stack developer</h2>
+			            <p><a href="https://www.linkedin.com/in/sparshgoyal199/" class="btn btn-primary py-3 px-4">LinkedIn</a> 
+							<a href="https://github.com/sparshgoyal199" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/circle_image.png" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Sparsh Goyal</span></p>
+										<p><span class="title-s">College: </span> <span>Hansraj college</span></p>
+										<p><span class="title-s">Current Year: </span> <span>2nd</span></p>
+										<p><span class="title-s">Address: </span> <span>Delhi, India</span></p>
+									  </div>
+									</div>
+								  </div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>Fascination with technology and its applications initiated my journey in computer science. I wish to proceed in the
+									best possible manner to get enhanced knowledge in web development, data structures, and software engineering.
+									My aim is to be involved with state-of-the-art web technologies and to take part in useful development projects,</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Full stack developer</span></li>
+									<li class="d-flex"><span>Education:</span> <span>B.Sc. (Hons.) Computer Science</span></li>
+									<li class="d-flex"><span>CGPA:</span> <span>8.32</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
+									<li class="d-flex"><span>Interest:</span> <span>Reading, Cinema, Cricket</span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number">3</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<p><a href="https://www.linkedin.com/in/sparshgoyal199/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>I aim to gain a solid grasp of the industry, master web design and data structure and algorithms, and work on larger projects,I aspire to become a backend skilled developer capable of effectively solving complex problems and advancing professionally</p>
+          </div>
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Skills</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row row-cols-1 row-cols-md-3 g-4">
+			<div class="col">
+				<div class="resume-wrap ftco-animate">
+					<span class="date">Frontend Development</span>
+					<h2>Web Technologies</h2>
+					<p class="mt-4">
+						Expertise in modern frontend frameworks and tools to build responsive and user-friendly web applications.
+						<ul>
+							<li>Proficient in <b style="color: #e8b95d;">HTML, CSS, JavaScript, Tailwind CSS</b>.</li>
+							<li>Experience with API integration and testing using <b style="color: #e8b95d;">Postman</b>.</li>
+							<li>Skilled in <b style="color: #e8b95d;">Git & GitHub</b> for version control.</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+		
+			<div class="col">
+				<div class="resume-wrap ftco-animate">
+					<span class="date">Backend Development</span>
+					<h2>Server-Side Technologies</h2>
+					<p class="mt-4">
+						Strong backend development skills to build scalable and high-performance applications.
+						<ul>
+							<li>Proficient in <b style="color: #e8b95d;">FastAPI</b> for developing RESTful APIs.</li>
+							<li>Experience with <b style="color: #e8b95d;">PostgreSQL & SQL</b> for database management.</li>
+							<li>Worked with <b style="color: #e8b95d;">Supabase</b> for authentication and real-time databases.</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+		
+			<div class="col">
+				<div class="resume-wrap ftco-animate">
+					<span class="date">Programming & Algorithms</span>
+					<h2>Data Structures & Algorithms</h2>
+					<p class="mt-4">
+						Strong problem-solving skills with a solid grasp of algorithms and optimized coding techniques.
+						<ul>
+							<li>Proficient in <b style="color: #e8b95d;">Python & C++</b>.</li>
+							<li>Experienced in <b style="color: #e8b95d;">Data Structures and Algorithms</b> for efficient problem-solving.</li>
+							<li>Knowledgeable in <b style="color: #e8b95d;">time complexity analysis</b> and performance optimization.</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2023-2026</span>
+    					<h2>B.Sc. (Hons.) Computer Science</h2>
+    					<span class="position">Delhi University</span>
+    					<p class="mt-4">CGPA: <span style="color: #ecc06a;">8.32</span></p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2021-2023</span>
+    					<h2>Higher Secondary School</h2>
+    					<span class="position">Sony Tower School</span>
+    					<p class="mt-4">Grade: <span style="color: #ecc06a;"> First Class with Distinction.</span></p>
+    				</div>
+				</div>
+    		</div>
+
+			<section class="ftco-section" id="achievements-section">
+				<div class="container">
+				  <div class="row justify-content-center mb-5 pb-5">
+					<div class="col-md-7 heading-section text-center ftco-animate">
+					  <h1 class="big big-2">Achievements & Certifications</h1>
+					  <h2 class="mb-4">Achievements & Certifications</h2>
+					  <p>Recognitions and certifications showcasing expertise in various domains.</p>
+					</div>
+				  </div>
+				  <div class="row d-flex">
+					<div class="col-md-4 d-flex ftco-animate">
+					  <div class="blog-entry justify-content-end">
+						<img style="height: 16em; width: 16em" src="images/sih.jpg" alt="Achievement 1">
+						<div class="text mt-3 float-right d-block">
+						  <h3 class="heading">Smart India Hackathon 2024 - Appreciation Certificate</h3>
+						  <p>Awarded by Hansraj College for participation in the ideathon Round of Smart India Hackathon 2024.</p>
+						</div>
+					  </div>
+					</div>
+					<div class="col-md-4 d-flex ftco-animate">
+					  <div class="blog-entry justify-content-end">
+						<img style="height: 16em; width: 16em" src="images/100.jpg" alt="Achievement 2">
+						<div class="text mt-3 float-right d-block">
+						  <h3 class="heading"> LeetCode 100 Days Badge 2024</h3>
+						  <p>Recognized as part of the top 4.2% of LeetCoders who solved problems consistently for 100+ days in 2024.</p>
+						</div>
+					  </div>
+					</div>
+					<div class="col-md-4 d-flex ftco-animate">
+					  <div class="blog-entry">
+						<img style="height: 16em; width: 16em" src="images/haritima.jpg" alt="Certification 1">
+						<div class="text mt-3 float-right d-block">
+						  <h3 class="heading">Haritima - Certificate of Appreciation</h3>
+						  <p>Acknowledgment for active participation in Haritima, the Environmental Awareness Society of Hansraj College.</p>
+						</div>
+					  </div>
+					</div>
+					<div class="col-md-4 d-flex ftco-animate" style="margin-left: 15%;">
+					  <div class="blog-entry">
+						<img style="height: 16em; width: 16em" src="images/50.jpg" alt="Certification 2">
+						<div class="text mt-3 float-right d-block">
+						  <h3 class="heading">LeetCode 50 Days Badge 2024</h3>
+						  <p>Recognized as part of the top 6.9% of LeetCoders who consistently solved problems for 50+ days in 2024.</p>
+						</div>
+					  </div>
+					</div>
+					<div class="col-md-4 d-flex ftco-animate">
+					  <div class="blog-entry">
+						<img style="height: 16em; width: 16em" src="images/codeCrash.jpg" alt="Certification 3">
+						<div class="text mt-3 float-right d-block">
+						  <h3 class="heading">CodeCrash Event - Certificate of Participation</h3>
+						  <p>Awarded for participating in the final round of CodeCrash, an esteemed coding event hosted by Ordinateur, the Computer Science Society of Hansraj College.</p>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				</div>
+			  </section>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="images/Sparshgoyal_resume.pdf" download="Sparshgoyal_resume.pdf" class="btn btn-primary py-4 px-5">Download resume</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p>Full-stack projects integrating HTML, CSS, JavaScript, FastAPI</p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://kitabay-com-455z.onrender.com" class="block-20 zoom-effect">
+				<img style="height: 12em; width: 16em" src="images/proj1.png" alt="">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/sparshgoyal199/kitabay.com">kitabay.com</a></h3>
+                <p>A feature-rich bookstore with secure authentication with JWT, real-time validation, dynamic UI, product management, advanced sorting, pagination, and search.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://ln.run/3HwGT" class="block-20 zoom-effect">
+				<img style="height: 12em; width: 16em" src="images/proj2.jpg" alt="">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/sparshgoyal199/Currency_Convertor">Currency Convertor</a></h3>
+                <p>built a Currency Convertor using HTML, CSS and JavaScript programming languages that employed APIs for delivering updated live exchange rates.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="http://sparshgoyal.me/myntra.com/" class="block-20 zoom-effect">
+				<img src="images/proj3.png" style="height: 12em; width: 16em" alt="">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/sparshgoyal199/myntra.com">Myntra Clone</a></h3>
+                <p>Developed myntra clone using HTML,CSS and javaScript.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+	<br>
+	  </div>
+    </section>
+
+	  
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/my_image.jpg)">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>More projects on<span> Github  </span> </h2>
+						<div class="heading"> <h4 style="font-weight: bolder;"> Bridging the gap between business and technology—solving problems and uncovering insights through software development. </h4>
+						<br>
+						<p><a href="https://github.com/sparshgoyal199" class="btn btn-primary py-3 px-5">GitHub</a></p>
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Delhi, India</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://0101010101">+91 9887170974</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:info@yoursite.com">sparshgoyal199@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+	            <p><a href="images/Sparshgoyal_resume.pdf" download="Sparshgoyal_resume.pdf" class="btn btn-primary py-4 px-5">resume</a></p>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/sparshgoyal199/"><span class="icon-linkedin"></span></a></li>  
+				      <li class="ftco-animate"><a href="https://www.instagram.com/sparshgoyal82/"><span class="icon-instagram"></span></a></li>
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
