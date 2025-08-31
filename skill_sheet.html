@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sparsh Goyal - MUNS Backend Skill Sheet</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .header h2 {
+            font-size: 1.5rem;
+            font-weight: 300;
+            opacity: 0.9;
+        }
+
+        .profile-links {
+            margin-top: 20px;
+        }
+
+        .profile-links a {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .profile-links a:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .skills-section {
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #3498db;
+        }
+
+        .skills-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .skills-table th {
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .skills-table td {
+            padding: 15px;
+            border-bottom: 1px solid #ecf0f1;
+        }
+
+        .skills-table tr:hover {
+            background: #f8f9fa;
+        }
+
+        .rating {
+            display: flex;
+            align-items: center;
+        }
+
+        .stars {
+            display: flex;
+            gap: 2px;
+            margin-left: 10px;
+        }
+
+        .star {
+            color: #f39c12;
+            font-size: 1.2rem;
+        }
+
+        .star.empty {
+            color: #bdc3c7;
+        }
+
+        .experience-badge {
+            display: inline-block;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .experience-yes {
+            background: #27ae60;
+            color: white;
+        }
+
+        .experience-no {
+            background: #e74c3c;
+            color: white;
+        }
+
+        .experience-limited {
+            background: #f39c12;
+            color: white;
+        }
+
+        .technologies-section {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 30px;
+        }
+
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .tech-category {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .tech-category h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        .tech-list {
+            list-style: none;
+        }
+
+        .tech-list li {
+            padding: 5px 0;
+            color: #34495e;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .tech-list li::before {
+            content: "▸";
+            color: #3498db;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        .projects-section {
+            margin-top: 30px;
+        }
+
+        .project-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            border-left: 5px solid #3498db;
+        }
+
+        .project-title {
+            font-size: 1.3rem;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .project-description {
+            color: #7f8c8d;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                padding: 20px;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            .skills-table {
+                font-size: 0.9rem;
+            }
+
+            .skills-table th,
+            .skills-table td {
+                padding: 10px;
+            }
+
+            .tech-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>MUNS BACKEND SKILL SHEET</h1>
+            <h2>Sparsh Goyal</h2>
+            <div class="profile-links">
+                <a href="https://drive.google.com/file/d/1sLowe89qXDELkZG8YYJ5PpZbCtQMrj7L/view?usp=drivesdk" target="_blank">📄 CV</a>
+                <a href="https://github.com/sparshgoyal199" target="_blank">🐙 GitHub</a>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="skills-section">
+                <h2 class="section-title">Technical Skills Assessment</h2>
+                <table class="skills-table">
+                    <thead>
+                        <tr>
+                            <th>Skill</th>
+                            <th>Self Grading (Out of 5)</th>
+                            <th>Hands On Experience</th>
+                            <th>Example/Experience</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Graph Databases</strong></td>
+                            <td>
+                                <div class="rating">
+                                    1
+                                    <div class="stars">
+                                        <span class="star">★</span>
+                                        <span class="star empty">★</span>
+                                        <span class="star empty">★</span>
+                                        <span class="star empty">★</span>
+                                        <span class="star empty">★</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><span class="experience-badge experience-no">No</span></td>
+                            <td>Haven't worked directly with graph databases yet. My experience is with relational SQL databases.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>GraphQL</strong></td>
+                            <td>
+                                <div class="rating">
+                                    1
+                                    <div class="stars">
+                                        <span class="star">★</span>
+                                        <span class="star empty">★</span>
+                                        <span class="star empty">★</span>
+                                        <span class="star empty">★</span>
+                                        <span class="star empty">★</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><span class="experience-badge experience-no">No</span></td>
+                            <td>Familiar with the concept but haven't implemented it in a project yet.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Selenium/Playwright/Puppeteer</strong></td>
+                            <td>
+                                <div class="rating">
+                                    2
+                                    <div class="stars">
+                                        <span class="star">★</span>
+                                        <span class="star">★</span>
+                                        <span class="star empty">★</span>
+                                        <span class="star empty">★</span>
+                                        <span class="star empty">★</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><span class="experience-badge experience-limited">Limited</span></td>
+                            <td>Basic understanding and experimentation for web automation and scraping.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>FastAPI</strong></td>
+                            <td>
+                                <div class="rating">
+                                    4.5
+                                    <div class="stars">
+                                        <span class="star">★</span>
+                                        <span class="star">★</span>
+                                        <span class="star">★</span>
+                                        <span class="star">★</span>
+                                        <span class="star">★</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><span class="experience-badge experience-yes">Yes</span></td>
+                            <td>Built Kitabay.com, an online bookstore. Implemented JWT authentication, real-time validation, password hashing, product CRUD operations with images, sorting, pagination, and search. Deployed on Render using Supabase for the database.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>AI Agents</strong></td>
+                            <td>
+                                <div class="rating">
+                                    1
+                                    <div class="stars">
+                                        <span class="star">★</span>
+                                        <span class="star empty">★</span>
+                                        <span class="star empty">★</span>
+                                        <span class="star empty">★</span>
+                                        <span class="star empty">★</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><span class="experience-badge experience-no">No</span></td>
+                            <td>Haven't worked directly with AI Agents yet.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Strong Knowledge of Python</strong></td>
+                            <td>
+                                <div class="rating">
+                                    4.5
+                                    <div class="stars">
+                                        <span class="star">★</span>
+                                        <span class="star">★</span>
+                                        <span class="star">★</span>
+                                        <span class="star">★</span>
+                                        <span class="star">★</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><span class="experience-badge experience-yes">Yes</span></td>
+                            <td>Solved 200+ Data Structures & Algorithms problems on LeetCode using Python. Used Python extensively in backend projects with FastAPI, Pydantic, and SQLModel for robust application logic.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>SQL for DB Management</strong></td>
+                            <td>
+                                <div class="rating">
+                                    4
+                                    <div class="stars">
+                                        <span class="star">★</span>
+                                        <span class="star">★</span>
+                                        <span class="star">★</span>
+                                        <span class="star">★</span>
+                                        <span class="star empty">★</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><span class="experience-badge experience-yes">Yes</span></td>
+                            <td>Used SQL for database management in the Kitabay.com project. Wrote queries for user authentication, product management, filtering, and search functionality, integrated via Supabase and SQLModel.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="technologies-section">
+                <h2 class="section-title">Additional Technologies & Core Skills</h2>
+                <div class="tech-grid">
+                    <div class="tech-category">
+                        <h3>Languages</h3>
+                        <ul class="tech-list">
+                            <li>Python</li>
+                            <li>C++</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                    <div class="tech-category">
+                        <h3>Frontend</h3>
+                        <ul class="tech-list">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Tailwind CSS</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                    </div>
+                    <div class="tech-category">
+                        <h3>Backend</h3>
+                        <ul class="tech-list">
+                            <li>FastAPI</li>
+                            <li>SQLModel</li>
+                            <li>Pydantic</li>
+                        </ul>
+                    </div>
+                    <div class="tech-category">
+                        <h3>Tools & Others</h3>
+                        <ul class="tech-list">
+                            <li>Git</li>
+                            <li>GitHub</li>
+                            <li>Canva</li>
+                            <li>Render (Deployment)</li>
+                            <li>Supabase</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects-section">
+                <h2 class="section-title">Projects</h2>
+                <div class="project-card">
+                    <div class="project-title">Kitabay.com</div>
+                    <div class="project-description">
+                        A full-stack online bookstore built with FastAPI, featuring JWT authentication, product management, search, sorting, and pagination. Implemented comprehensive backend functionality including user authentication, real-time validation, password hashing, and CRUD operations with image handling.
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-title">Currency Converter</div>
+                    <div class="project-description">
+                        A web tool built with HTML, CSS, and JavaScript that uses external APIs to fetch and display live exchange rates. Demonstrates frontend development skills and API integration capabilities.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
